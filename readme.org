@@ -1,0 +1,242 @@
+#+TITLE: Popular Vim plugins in Evil
+#+AUTHOR: Michael Bogdan
+
+Vim is a popular text editor and by design comes with few functions outside of text editing. Emacs meanwhile comes with many functions and packages outside of text editing, but without vi keybindings. Evil is a project to emulate vi in Emacs and this list is intended as a reference on how to replicate intended functionality of packages in Vim with Emacs/Evil.
+
+List of plugins taken from [[https://github.com/mhinz/vim-galore/blob/master/PLUGINS.md][Vim plugins]].
+
+* Preface
+Basic Evil emulates virtually all functions base Vim provides, those equivalents are not covered. For a general introduction on getting started with Evil as a Vim user see [[https://github.com/noctuid/evil-guide][Noctuid' Evil guide]].
+
+* Plugins by topic
+** Alignment
+
+| Vim plugin     | Emacs package | Other alternative |
+|----------------+---------------+-------------------|
+| [[https://github.com/godlygeek/tabular][tabular]]        |               |                   |
+| [[https://github.com/junegunn/vim-easy-align][vim-easy-align]] |               |                   |
+| [[https://github.com/tommcdo/vim-lion][vim-lion]]       |               |                   |
+
+** Building and linting
+
+| Vim plugin | Emacs package | Other alternative |
+|------------+---------------+-------------------|
+| [[https://github.com/w0rp/ale][ale]]        |               |                   |
+| [[https://github.com/neomake/neomake][neomake]]    |               |                   |
+| [[https://github.com/vim-syntastic/syntastic][syntastic]]  |               |                   |
+
+** Code completion
+
+| Vim plugin              | Emacs package | Other alternative |
+|-------------------------+---------------+-------------------|
+| [[https://github.com/prabirshrestha/asyncomplete.vim][asyncomplete.vim]]        |               |                   |
+| [[https://github.com/maralla/completor.vim][completor.vim]]           |               |                   |
+| [[https://github.com/Shougo/deoplete.nvim][deoplete.nvim]]           |               |                   |
+| [[https://github.com/Shougo/neocomplete.vim][neocomplete.vim]]         |               |                   |
+| [[https://github.com/roxma/nvim-completion-manager][nvim-completion-manager]] |               |                   |
+| [[https://github.com/ervandew/supertab][supertab]]                |               |                   |
+| [[https://github.com/lifepillar/vim-mucomplete][vim-mucomplete]]          |               |                   |
+| [[https://github.com/ajh17/VimCompletesMe][VimCompletesMe]]          |               |                   |
+| [[https://github.com/Valloric/YouCompleteMe][YouCompleteMe]]           |               |                   |
+
+** Cycle
+
+| Vim plugin      | Emacs package | Other alternative |
+|-----------------+---------------+-------------------|
+| [[https://github.com/AndrewRadev/switch.vim][switch.vim]]      |               |                   |
+| [[https://github.com/tpope/vim-speeddating][vim-speeddating]] |               |                   |
+
+** Commenters
+
+| Vim plugin     | Emacs package | Other alternative |
+|----------------+---------------+-------------------|
+| [[https://github.com/scrooloose/nerdcommenter][nerdcommenter]]  |               |                   |
+| [[https://github.com/tomtom/tcomment_vim][tcomment_vim]]   |               |                   |
+| [[https://github.com/tpope/vim-commentary][vim-commentary]] |               |                   |
+
+** Databases
+
+| Vim plugin | Emacs package | Other alternative |
+|------------+---------------+-------------------|
+| [[https://github.com/lifepillar/pgsql.vim][pgsql.vim]]  |               |                   |
+| [[https://github.com/tpope/vim-dadbod][vim-dadbod]] |               |                   |
+
+** Delimiter
+
+| Vim plugin  | Emacs package | Other alternative |
+|-------------+---------------+-------------------|
+| [[https://github.com/jiangmiao/auto-pairs][auto-pairs]]  |               |                   |
+| [[https://github.com/Raimondi/delimitMate][delimitMate]] |               |                   |
+| [[https://github.com/tpope/vim-endwise][vim-endwise]] |               |                   |
+
+** Fuzzy finders
+
+| Vim plugin                               | Emacs package | Other alternative |
+|------------------------------------------+---------------+-------------------|
+| [[https://github.com/wincent/Command-T][Command-T]] (/requires +ruby/)             |               |                   |
+| [[https://github.com/ctrlpvim/ctrlp.vim][ctrlp.vim]]                                |               |                   |
+| [[https://github.com/Shougo/denite.nvim][denite.nvim]] (/requires +python3/)        |               |                   |
+| [[https://github.com/junegunn/fzf][fzf]] (and [[https://github.com/junegunn/fzf.vim][fzf.vim]])                        |               |                   |
+| [[https://github.com/Yggdroot/LeaderF][LeaderF]] (/requires +python or +python3/) |               |                   |
+| [[https://github.com/Shougo/unite.vim][unite.vim]]                                |               |                   |
+
+** Grep tools
+
+| Vim plugin  | Emacs package | Other alternative |
+|-------------+---------------+-------------------|
+| [[https://github.com/dyng/ctrlsf.vim][ctrlsf.vim]]  |               |                   |
+| [[https://github.com/wincent/ferret][ferret]]      |               |                   |
+| [[https://github.com/mhinz/vim-grepper][vim-grepper]] |               |                   |
+
+** Indent
+
+| Vim plugin        | Emacs package | Other alternative |
+|-------------------+---------------+-------------------|
+| [[https://github.com/Yggdroot/indentLine][indentLine]]        |               |                   |
+| [[https://github.com/nathanaelkane/vim-indent-guides][vim-indent-guides]] |               |                   |
+
+** Navigation
+
+| Vim plugin                                | Emacs package | Other alternative |
+|-------------------------------------------+---------------+-------------------|
+| [[https://github.com/scrooloose/nerdtree][nerdtree]]                                  |               |                   |
+| [[https://github.com/majutsushi/tagbar][tagbar]]                                    |               |                   |
+| [[https://github.com/justinmk/vim-dirvish][vim-dirvish]]                               |               |                   |
+| [[https://github.com/easymotion/vim-easymotion][vim-easymotion]]                            |               |                   |
+| [[https://github.com/justinmk/vim-sneak][vim-sneak]]                                 |               |                   |
+| [[https://github.com/tpope/vim-vinegar][vim-vinegar]]                               |               |                   |
+| [[https://github.com/Shougo/vimfiler.vim][vimfiler.vim]] (/depends on other plugins/) |               |                   |
+
+Also see [[#fuzzy-finders][fuzzy finders]].
+
+** Snippets
+
+| Vim plugin                                  | Emacs package | Other alternative |
+|---------------------------------------------+---------------+-------------------|
+| [[https://github.com/Shougo/neosnippet.vim][neosnippet.vim]] (/depends on other plugins/) |               |                   |
+| [[https://github.com/SirVer/ultisnips][ultisnips]]                                   |               |                   |
+| [[https://github.com/garbas/vim-snipmate][vim-snipmate]] (/depends on other plugins/)   |               |                   |
+| [[https://github.com/drmingdrmer/xptemplate][xptemplate]]                                  |               |                   |
+
+** Statusline
+
+| Vim plugin    | Emacs package | Other alternative |
+|---------------+---------------+-------------------|
+| [[https://github.com/itchyny/lightline.vim][lightline.vim]] |               |                   |
+| [[https://github.com/powerline/powerline][powerline]]     |               |                   |
+| [[https://github.com/vim-airline/vim-airline][vim-airline]]   |               |                   |
+| [[https://github.com/tpope/vim-flagship][vim-flagship]]  |               |                   |
+
+** Surround
+
+| Vim plugin            | Emacs package | Other alternative |
+|-----------------------+---------------+-------------------|
+| [[https://github.com/rhysd/vim-operator-surround][vim-operator-surround]] |               |                   |
+| [[https://github.com/machakann/vim-sandwich][vim-sandwich]]          |               |                   |
+| [[https://github.com/tpope/vim-surround][vim-surround]]          |               |                   |
+
+** Taking notes
+
+| Vim plugin  | Emacs package | Other alternative |
+|-------------+---------------+-------------------|
+| [[https://github.com/dhruvasagar/vim-dotoo][vim-dotoo]]   |               |                   |
+| [[https://github.com/junegunn/vim-journal][vim-journal]] |               |                   |
+| [[https://github.com/xolox/vim-notes][vim-notes]]   |               |                   |
+| [[https://github.com/jceb/vim-orgmode][vim-orgmode]] |               |                   |
+| [[https://github.com/fmoralesc/vim-pad][vim-pad]]     |               |                   |
+| [[https://github.com/vimwiki/vimwiki][vimwiki]]     |               |                   |
+
+** Testing
+
+| Vim plugin | Emacs package | Other alternative |
+|------------+---------------+-------------------|
+| [[https://github.com/janko-m/vim-test][vim-test]]   |               |                   |
+
+** Text objects
+
+| Vim plugin        | Emacs package | Other alternative |
+|-------------------+---------------+-------------------|
+| [[https://github.com/wellle/targets.vim][targets.vim]]       |               |                   |
+| [[https://github.com/tommcdo/vim-exchange][vim-exchange]]      |               |                   |
+| [[https://github.com/michaeljsmith/vim-indent-object][vim-indent-object]] |               |                   |
+| [[https://github.com/andymass/vim-matchup][vim-matchup]]       |               |                   |
+| [[https://github.com/kana/vim-textobj-user][vim-textobj-user]]  |               |                   |
+
+** Tmux
+
+| Vim plugin         | Emacs package | Other alternative |
+|--------------------+---------------+-------------------|
+| [[https://github.com/wellle/tmux-complete.vim][tmux-complete.vim]]  |               |                   |
+| [[https://github.com/tpope/vim-dispatch][vim-dispatch]]       |               |                   |
+| [[https://github.com/christoomey/vim-tmux-navigator][vim-tmux-navigator]] |               |                   |
+| [[https://github.com/sjl/vitality.vim][vitality.vim]]       |               |                   |
+
+** Undo history
+
+| Vim plugin | Emacs package | Other alternative |
+|------------+---------------+-------------------|
+| [[https://github.com/sjl/gundo.vim][gundo.vim]]  |               |                   |
+| [[https://github.com/mbbill/undotree][undotree]]   |               |                   |
+
+** Version control
+
+| Vim plugin           | Emacs package | Other alternative |
+|----------------------+---------------+-------------------|
+| [[https://github.com/cohama/agit.vim][agit.vim]]             |               |                   |
+| [[https://github.com/rhysd/committia.vim][committia.vim]]        |               |                   |
+| [[https://github.com/mattn/gist-vim][gist-vim]]             |               |                   |
+| [[https://github.com/jaxbot/github-issues.vim][github-issues.vim]]    |               |                   |
+| [[https://github.com/gregsexton/gitv][gitv]]                 |               |                   |
+| [[https://github.com/junegunn/gv.vim][gv.vim]]               |               |                   |
+| [[https://github.com/Xuyuanp/nerdtree-git-plugin][nerdtree-git-plugin]]  |               |                   |
+| [[https://github.com/haya14busa/vim-auto-programming][vim-auto-programming]] |               |                   |
+| [[https://github.com/tpope/vim-fugitive][vim-fugitive]]         |               |                   |
+| [[https://github.com/airblade/vim-gitgutter][vim-gitgutter]]        |               |                   |
+| [[https://github.com/junegunn/vim-github-dashboard][vim-github-dashboard]] |               |                   |
+| [[https://bitbucket.org/ludovicchabant/vim-lawrencium][vim-lawrencium]]       |               |                   |
+| [[https://github.com/mhinz/vim-signify][vim-signify]]          |               |                   |
+| [[https://github.com/sodapopcan/vim-twiggy][vim-twiggy]]           |               |                   |
+| [[https://github.com/jreybert/vimagit][vimagit]]              |               |                   |
+
+** Writing
+
+| Vim plugin           | Emacs package | Other alternative |
+|----------------------+---------------+-------------------|
+| [[https://github.com/ron89/thesaurus_query.vim][thesaurus_query.vim]]  |               |                   |
+| [[https://github.com/rhysd/vim-grammarous][vim-grammarous]]       |               |                   |
+| [[https://github.com/dpelle/vim-LanguageTool][vim-LanguageTool]]     |               |                   |
+| [[https://github.com/beloglazov/vim-online-thesaurus][vim-online-thesaurus]] |               |                   |
+| [[https://github.com/reedes/vim-textobj-quote][vim-textobj-quote]]    |               |                   |
+| [[https://github.com/reedes/vim-wordy][vim-wordy]]            |               |                   |
+
+** Misc
+
+| Vim plugin           | Emacs package | Other alternative |
+|----------------------+---------------+-------------------|
+| [[https://github.com/itchyny/calendar.vim][calendar.vim]]         |               |                   |
+| [[https://github.com/FredKSchott/CoVim][CoVim]]                |               |                   |
+| [[https://github.com/Konfekt/FastFold][FastFold]]             |               |                   |
+| [[https://github.com/junegunn/goyo.vim][goyo.vim]]             |               |                   |
+| [[https://github.com/haya14busa/is.vim][is.vim]]               |               |                   |
+| [[https://github.com/junegunn/limelight.vim][limelight.vim]]        |               |                   |
+| [[https://github.com/chrisbra/NrrwRgn][NrrwRgn]]              |               |                   |
+| [[https://github.com/AndrewRadev/sideways.vim][sideways.vim]]         |               |                   |
+| [[https://github.com/AndrewRadev/splitjoin.vim][splitjoin.vim]]        |               |                   |
+| [[https://github.com/chrisbra/unicode.vim][unicode.vim]]          |               |                   |
+| [[https://github.com/tpope/vim-abolish][vim-abolish]]          |               |                   |
+| [[https://github.com/ConradIrwin/vim-bracketed-paste][vim-bracketed-paste]]  |               |                   |
+| [[https://github.com/ryanoasis/vim-devicons][vim-devicons]]         |               |                   |
+| [[https://github.com/chrisbra/vim-diff-enhanced][vim-diff-enhanced]]    |               |                   |
+| [[https://github.com/blueyed/vim-diminactive][vim-diminactive]]      |               |                   |
+| [[https://github.com/drmikehenry/vim-fixkey][vim-fixkey]]           |               |                   |
+| [[https://github.com/jamessan/vim-gnupg][vim-gnupg]]            |               |                   |
+| [[https://github.com/ludovicchabant/vim-gutentags][vim-gutentags]]        |               |                   |
+| [[https://github.com/ryanss/vim-hackernews][vim-hackernews]]       |               |                   |
+| [[https://github.com/matze/vim-move][vim-move]]             |               |                   |
+| [[https://github.com/terryma/vim-multiple-cursors][vim-multiple-cursors]] |               |                   |
+| [[https://github.com/tpope/vim-projectionist][vim-projectionist]]    |               |                   |
+| [[https://github.com/romainl/vim-qf][vim-qf]]               |               |                   |
+| [[https://github.com/tpope/vim-rsi][vim-rsi]]              |               |                   |
+| [[https://github.com/tpope/vim-sleuth][vim-sleuth]]           |               |                   |
+| [[https://github.com/mhinz/vim-startify][vim-startify]]         |               |                   |
+| [[https://github.com/tpope/vim-unimpaired][vim-unimpaired]]       |               |                   |
